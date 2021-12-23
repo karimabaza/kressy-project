@@ -1,0 +1,58 @@
+.logo{
+    width: 60%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.page-header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.page-header span{
+    float: right;
+}
+.icon-header{
+    cursor: pointer;
+    margin: 0px 10px;
+}
+.icon-header:hover{
+    color: rgb(104, 104, 104);
+}
+.css-1gqfvv-MuiPaper-root {
+    background-color: #f0f0f0 !important;
+    border-radius: 45px !important;
+    box-shadow: none !important;
+ 
+}
+.buy-button{
+    color: #fff !important;
+    background-color: #000000 !important;
+    width: 98% !important;
+    font-size: 20px !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    right: 0 !important;
+
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+.card-container{
+    margin-top: 20px;
+}
+.home-text{
+    margin-left: 80px;
+}
+
+@media screen and (max-width:500px){
+    .logo{
+        width: 100%;
+    }
+}
