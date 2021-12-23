@@ -53,7 +53,7 @@ const Home=(props)=>{
       <List>
         <div className='page-header'>
             <h2 className='home-text' >
-            Home
+            <img className='page-logo' src={Logo} alt='' />
             <span>
                 <NotificationsNoneIcon className='icon-header' />
                 <SettingsOutlinedIcon className='icon-header' />
@@ -72,8 +72,8 @@ const Home=(props)=>{
       </IconButton>
       <InputBase
         sx={{ ml: 1, flex: 1 }}
-        placeholder="Search from 12,000 Fashion Brands"
-        inputProps={{ 'aria-label': 'Search from 12,000 Fashion Brands' }}
+        placeholder="Search"
+        inputProps={{ 'aria-label': 'Search' }}
       />
       
     </Paper>

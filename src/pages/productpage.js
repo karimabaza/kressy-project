@@ -9,6 +9,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
+import Logo from '../assets/images/logo.JPG'
 import Container from '@mui/material/Container';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
@@ -49,7 +50,7 @@ const ProductPage=(props)=>{
       <List>
         <div className='page-header'>
             <h2 className='home-text' >
-            Home
+            <img className='page-logo' src={Logo} alt='' />
             <span>
                 <NotificationsNoneIcon className='icon-header' />
                 <SettingsOutlinedIcon className='icon-header' />
@@ -68,8 +69,8 @@ const ProductPage=(props)=>{
       </IconButton>
       <InputBase
         sx={{ ml: 1, flex: 1 }}
-        placeholder="Search from 12,000 Fashion Brands"
-        inputProps={{ 'aria-label': 'Search from 12,000 Fashion Brands' }}
+        placeholder="Search "
+        inputProps={{ 'aria-label': 'Search ' }}
       />
       
     </Paper>

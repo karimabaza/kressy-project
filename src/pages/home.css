@@ -43,8 +43,17 @@
 .home-text{
     margin-left: 80px;
 }
+.page-logo{
+    width:200px
+}
+.page-logo{
+    width: 200px;
+}
 @media screen and (max-width:500px){
     .logo{
         width: 100%;
+    }
+    .page-logo{
+        width: 120px;
     }
 }
