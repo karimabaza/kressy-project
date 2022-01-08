@@ -33,6 +33,9 @@ const Home=(props)=>{
     const handleNav=()=> {
         navigate('/');
       }
+    const handleSignIn=()=> {
+        navigate('/signin');
+      }
 
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -112,7 +115,7 @@ const Home=(props)=>{
           
           <BottomNavigationAction label="Home"  icon={<HomeIcon />}/>
           <BottomNavigationAction label="Search" onClick={()=>handleNav()} icon={<SearchIcon />} />
-          <BottomNavigationAction label="My List" icon={<FavoriteBorderIcon />} />
+          <BottomNavigationAction label="My List" onClick={()=>handleSignIn()} icon={<FavoriteBorderIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>

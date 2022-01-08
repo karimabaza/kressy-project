@@ -1,0 +1,109 @@
+.google{
+    font-size: 28px;
+    color: white;
+}
+.google-text{
+    margin-left: 10px;
+    font-size:19px;
+    font-weight: 700;
+    color: white;
+
+}
+.google-container{
+    background-color: #E66163;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    margin: 15px 0px;
+}
+.google-container:hover{
+    background-color: #c24648;
+
+}
+.apple-container{
+    background-color: rgb(26, 13, 13);
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    margin: 15px 0px;
+}
+.apple-container:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+.facebook-container{
+    background-color: #6266F5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    margin: 15px 0px;
+}
+.facebook-container:hover{
+    background-color: #5458d6;
+
+}
+.forget-password-signup{
+    text-decoration: none !important;
+    color: #6266F5;
+    cursor: pointer;
+    text-align: center;
+}
+.or{
+    text-align: center;
+    text-transform: uppercase;
+    color: gray; 
+}
+.dont-have-account-signup{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ .login-email-btn{
+    margin-top: 0%;
+
+ }
+ .login-email-btn button{
+    width: 100%;
+    background-color: #6266F5 !important;
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 10px;
+}
+@media screen and (max-width:600px){
+    .google{
+        font-size: 22px;
+    }
+    .sign-container{
+        width: 90% !important;
+    }
+    .google-text{
+        font-size:17px;
+    
+    }
+    .google-container{
+        padding: 8px;
+        margin: 10px 0px;
+    }
+    .apple-container{
+        padding: 8px;
+        margin: 10px 0px;
+    }
+   
+    .facebook-container{
+        padding: 8px;
+        margin: 10px 0px;
+    }
+    .login-email-btn button{
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,89 @@
+.signin-logo{
+    width: 60%;
+    margin-top: 20%;
+}
+.welcome-text{
+    font-weight: 700;
+    font-size: 26px !important;
+    margin-top: 20px;
+    margin-bottom: 0px !important;
+
+}
+.signin-text{
+    font-size: 17px;
+}
+.forget-password-container{
+    padding-top: 20px;
+}
+.forget-password{
+    text-decoration: none !important;
+    color: #6266F5;
+    padding: 10px;
+    cursor: pointer;
+}
+.login-btn{
+
+    margin-top: 10%;
+}
+.login-btn button{
+    width: 100%;
+    background-color: #6266F5 !important;
+    font-size: 22px;
+    padding: 10px;
+}
+.login-inputs-container{
+    margin-top: 25%;
+}
+.dont-have-account{
+   text-align: center;
+   margin-top: 10%;
+}
+
+.css-cio0x1-MuiInputBase-root-MuiFilledInput-root:after,.css-cio0x1-MuiInputBase-root-MuiFilledInput-root:before {
+    border-bottom: none !important;
+}
+.css-cio0x1-MuiInputBase-root-MuiFilledInput-root {
+    
+    background-color: transparent !important;
+}
+.css-1vm0r4s-MuiPaper-root {
+    background-color: #F7F6FB !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:900px){
+    .signin-logo{
+        width: 70%;
+        margin-top: 0%;
+    }
+    .login-inputs-container {
+        margin-top: 0%;
+    }
+    .dont-have-account {
+        margin-top: 10%;
+    }
+
+}
+@media screen and (max-width:600px){
+    .signin-logo{
+        width: 125px;
+        margin-top: 5%;
+    }
+    .dont-have-account {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .login-inputs-container {
+        margin-top: 0%;
+    }
+    .login-btn button{
+    padding: 5px;
+
+    }
+    .welcome-text {
+        font-size: 22px !important;
+    }
+    .signin-text {
+        font-size: 16px;
+    }
+}
