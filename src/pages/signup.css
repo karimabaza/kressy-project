@@ -70,7 +70,7 @@
  }
  .login-email-btn button{
     width: 100%;
-    background-color: #6266F5 !important;
+    background: linear-gradient(0.20turn, #7033EE, #CE37E7, #FF8255);
     font-size: 22px;
     padding: 10px;
     margin-top: 10px;
@@ -80,7 +80,7 @@
         font-size: 22px;
     }
     .sign-container{
-        width: 90% !important;
+        width: 100% !important;
     }
     .google-text{
         font-size:17px;

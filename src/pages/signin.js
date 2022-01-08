@@ -39,12 +39,12 @@ const SignIn=(props)=>{
    
     return (
       <>
-      <Container className='sign-container' style={{textAlign:"center"}}>
-      <Grid container justifyContent="center" alignItems="center" spacing={2}>
-  <Grid item md={4} xs={12} sm={5}>
+      <div className='sign-container' style={{textAlign:"center"}}>
+      <Grid container style={{justifyContent:"space-around"}}  alignItems="center" spacing={2}>
+  <Grid item md={4} xs={10} sm={4}>
       <img className='signin-logo' src={SignInLogo} alt=' ' />
   </Grid>
-  <Grid item md={7} xs={12} sm={8} >
+  <Grid item md={5} xs={10} sm={9} >
     <div style={{textAlign:"start"}} className='login-inputs-container'>
     <h5 className='welcome-text'>Welcome To Kreesy's App</h5>
       <p className='signin-text'>Sign in to your account with email</p>
@@ -81,7 +81,7 @@ const SignIn=(props)=>{
           id="filled-start-adornment"
           style={{width:"100%",}}
           sx={{ m: 1, }}
-        
+          type="password"
           variant="filled"
         />
       <IconButton sx={{ p: '10px' }} aria-label="menu">
@@ -112,7 +112,7 @@ const SignIn=(props)=>{
 
 </Grid>
 
-      </Container>
+      </div>
       <Box sx={{ pb: 7 }} >
       <CssBaseline />
      
