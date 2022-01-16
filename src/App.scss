@@ -1,0 +1,19 @@
+.filter-dd{
+    .dropdown-toggle {
+      &::after {
+        display: none;
+      }
+    }
+  
+    .dropdown-menu {
+      width: 450px;
+      border: none !important;
+      box-shadow: 0 0 20px #ddd;
+      padding: 20px 20px !important;
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+        left: 0;
+        right: 0;
+      }
+    }
+  }

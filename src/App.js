@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+import './App.scss';
 import Home from './pages/home'
 import ProductPage from './pages/productpage'
 import SignIn from './pages/signin'

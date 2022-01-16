@@ -27,13 +27,13 @@
  
 }
 
-.products{
+/* .products{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:start;
     padding: 20px 10px;
-}
+} */
 .products a{
     text-decoration: none;
 }
