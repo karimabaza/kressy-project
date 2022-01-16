@@ -20,7 +20,7 @@ import { Link } from '@mui/material';
 import Button from '@mui/material/Button';
 import { BsGoogle,BsApple } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-
+import BottomNavigationctm from "../components/BottomNavigationctm";
 const SignUp=(props)=>{
     const ref = useRef(null);
     const [search, setSearch] =useState("");
@@ -48,9 +48,9 @@ const SignUp=(props)=>{
     <div style={{textAlign:"start"}} className='login-inputs-container'>
     <h5 className='welcome-text'>Welcome To Kreesy's App</h5>
       <p className='signin-text'>Sign in to your account</p>
-      <div className='google-container'><span className='google'><BsGoogle /></span><span className='google-text'>Login with Google</span></div>
-      <div className='apple-container'><span className='google'><BsApple /></span><span className='google-text'>Login with Apple</span></div>
-      <div className='facebook-container'><span className='google'><FaFacebookF /></span><span className='google-text'>Login with Facebook</span></div>
+      <div className='google-container'><span className='google'><BsGoogle /></span><span className='google-text'>Signup with Google</span></div>
+      <div className='apple-container'><span className='google'><BsApple /></span><span className='google-text'>Signup with Apple</span></div>
+      <div className='facebook-container'><span className='google'><FaFacebookF /></span><span className='google-text'>Signup with Facebook</span></div>
       <p className='or'>or</p>
       <hr />
       
@@ -101,19 +101,7 @@ const SignUp=(props)=>{
       <Box sx={{ pb: 7 }} >
       <CssBaseline />
      
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-        <BottomNavigation
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        >
-          <BottomNavigationAction label="Home" onClick={()=>handleNav()}  icon={<HomeIcon />}/>
-          <BottomNavigationAction label="Search"  icon={<SearchIcon />} />
-          <BottomNavigationAction label="My List" onClick={()=>handleNavSign()} icon={<FavoriteBorderIcon />} />
-        </BottomNavigation>
-      </Paper>
+      <BottomNavigationctm></BottomNavigationctm>
     </Box>
     
       

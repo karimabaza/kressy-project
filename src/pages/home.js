@@ -20,6 +20,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
+import BottomNavigationctm from "../components/BottomNavigationctm";
 
 const Home=(props)=>{
     const ref = useRef(null);
@@ -33,8 +34,12 @@ const Home=(props)=>{
     const handleNav=()=> {
         navigate('/');
       }
-    const handleSignIn=()=> {
+      const handleSignIn=()=> {
         navigate('/signin');
+      }
+
+      const privacyPolicy=()=> {
+        navigate('/privacy-policy');
       }
 
     useEffect(() => {
@@ -104,7 +109,8 @@ const Home=(props)=>{
 
         </div>
       </List>
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+      <BottomNavigationctm></BottomNavigationctm>
+      {/* <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
         <BottomNavigation
           showLabels
           value={value}
@@ -116,8 +122,9 @@ const Home=(props)=>{
           <BottomNavigationAction label="Home"  icon={<HomeIcon />}/>
           <BottomNavigationAction label="Search" onClick={()=>handleNav()} icon={<SearchIcon />} />
           <BottomNavigationAction label="My List" onClick={()=>handleSignIn()} icon={<FavoriteBorderIcon />} />
+          <BottomNavigationAction label="PrivacyPolicy" onClick={()=>privacyPolicy()} icon={<FavoriteBorderIcon />} />
         </BottomNavigation>
-      </Paper>
+      </Paper> */}
     </Box>
     }
       

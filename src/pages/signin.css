@@ -23,7 +23,7 @@
 }
 .login-btn{
 
-    margin-top: 10%;
+    margin-top: 10px;
 }
 .login-btn button{
     width: 100%;
@@ -36,7 +36,7 @@
 }
 .dont-have-account{
    text-align: center;
-   margin-top: 10%;
+   margin-top: 10px;
 }
 
 .css-cio0x1-MuiInputBase-root-MuiFilledInput-root:after,.css-cio0x1-MuiInputBase-root-MuiFilledInput-root:before {
