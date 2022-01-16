@@ -1,3 +1,7 @@
+html, body{
+  height: 100%;
+}
+
 .filter-dd{
     .dropdown-toggle {
       &::after {
@@ -15,5 +19,13 @@
         left: 0;
         right: 0;
       }
+    }
+  }
+
+  .auth-pages-img{
+    width: 60%;
+    margin: 0 auto;
+    img{
+      width: 100%;
     }
   }

@@ -78,7 +78,7 @@ const Home = (props) => {
                 </span>
               </h2>
             </div>
-            <div className="container">
+            <div className="container mb-3">
               <div className="row">
                 <div className="col-md-10">
                   <Paper className="search-bar" onChange={(e) => setSearch(e.target.value)} sx={{ p: "2px 4px", display: "flex", alignItems: "center", width: "100%" }}>
@@ -112,15 +112,13 @@ const Home = (props) => {
                 </div>
               </div>
             </div>
-            <div className="container-fluid">
-              <div className="row products">
+            <div className="container">
+              <div className="row products gy-3">
                 {SearchFilterData.map((product, index) => {
                   return (
-                    <div className="col-md-2">
-                      <Link to="/product">
-                        <div key={index} onClick={() => props.currentProd(product) || console.log(props.prod)}>
-                          <Card url={product.url} name={product.name} price={product.price} description={product.description} />
-                        </div>
+                    <div className="col-md-4">
+                      <Link to="/product" key={index} onClick={() => props.currentProd(product) || console.log(props.prod)}>
+                        <Card url={product.url} name={product.name} price={product.price} description={product.description} />
                       </Link>
                     </div>
                   );

@@ -36,6 +36,7 @@
 } */
 .products a{
     text-decoration: none;
+    display: block;
 }
 .card-container{
     margin-top: 20px;

@@ -1,7 +1,7 @@
-.signin-logo{
+/* .signin-logo{
     width: 60%;
     margin-top: 20%;
-}
+} */
 .welcome-text{
     font-weight: 700;
     font-size: 26px !important;
@@ -31,13 +31,8 @@
     font-size: 22px;
     padding: 10px;
 }
-.login-inputs-container{
-    margin-top: 25%;
-}
-.dont-have-account{
-   text-align: center;
-   margin-top: 10px;
-}
+
+
 
 .css-cio0x1-MuiInputBase-root-MuiFilledInput-root:after,.css-cio0x1-MuiInputBase-root-MuiFilledInput-root:before {
     border-bottom: none !important;
@@ -51,39 +46,4 @@
     box-shadow: none !important;
 }
 
-@media screen and (max-width:900px){
-    .signin-logo{
-        width: 70%;
-        margin-top: 0%;
-    }
-    .login-inputs-container {
-        margin-top: 0%;
-    }
-    .dont-have-account {
-        margin-top: 10%;
-    }
 
-}
-@media screen and (max-width:600px){
-    .signin-logo{
-        width: 125px;
-        margin-top: 5%;
-    }
-    .dont-have-account {
-        text-align: center;
-        margin-top: 5%;
-    }
-    .login-inputs-container {
-        margin-top: 0%;
-    }
-    .login-btn button{
-    padding: 5px;
-
-    }
-    .welcome-text {
-        font-size: 22px !important;
-    }
-    .signin-text {
-        font-size: 16px;
-    }
-}
