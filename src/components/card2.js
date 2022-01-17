@@ -26,7 +26,7 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card className='card-container' sx={{ maxWidth: 250,mb:"50px" }} >
+    <Card  sx={{ mb:"50px" }} >
      
       <CardMedia
         component="img"

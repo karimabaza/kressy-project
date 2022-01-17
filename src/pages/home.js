@@ -19,11 +19,10 @@ import InputBase from "@mui/material/InputBase";
 import HomeIcon from "@mui/icons-material/Home";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import { useNavigate , Link } from "react-router-dom";
 import BottomNavigationctm from "../components/BottomNavigationctm";
-import Slider from "@mui/material/Slider";
-import { Checkbox , FormControlLabel , FormGroup} from "@mui/material";
+import { Checkbox , FormControlLabel , FormGroup , Slider} from "@mui/material";
 
 function valuetext(value) {
   return `${value}°C`;
@@ -79,7 +78,7 @@ const Home = (props) => {
               </h2>
             </div>
             <div className="container mb-3">
-              <div className="row">
+              <div className="row align-items-center">
                 <div className="col-md-10">
                   <Paper className="search-bar" onChange={(e) => setSearch(e.target.value)} sx={{ p: "2px 4px", display: "flex", alignItems: "center", width: "100%" }}>
                     <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
@@ -90,8 +89,8 @@ const Home = (props) => {
                 </div>
                 <div className="col-md-2">
                   <Dropdown className="filter-dd">
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                      Filters
+                    <Dropdown.Toggle class="btn-theme-blue" id="dropdown-basic">
+                      <FilterAltIcon/>
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
@@ -116,7 +115,7 @@ const Home = (props) => {
               <div className="row products gy-3">
                 {SearchFilterData.map((product, index) => {
                   return (
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                       <Link to="/product" key={index} onClick={() => props.currentProd(product) || console.log(props.prod)}>
                         <Card url={product.url} name={product.name} price={product.price} description={product.description} />
                       </Link>

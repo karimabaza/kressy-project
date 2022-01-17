@@ -2,6 +2,11 @@ html, body{
   height: 100%;
 }
 
+.btn-theme-blue{
+  background: #3399ea;
+  border-color: #3399ea;
+}
+
 .filter-dd{
     .dropdown-toggle {
       &::after {
@@ -29,3 +34,4 @@ html, body{
       width: 100%;
     }
   }
+

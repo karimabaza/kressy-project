@@ -19,6 +19,8 @@ import InputBase from "@mui/material/InputBase";
 import HomeIcon from "@mui/icons-material/Home";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
+
+import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import BottomNavigationctm from "../../components/BottomNavigationctm";
@@ -72,8 +74,8 @@ const WishList = (props) =>{
                 </div>
                 <div className="col-md-2">
                   <Dropdown className="filter-dd">
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                      Filters
+                  <Dropdown.Toggle class="btn-theme-blue" id="dropdown-basic">
+                      <FilterAltIcon/>
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
