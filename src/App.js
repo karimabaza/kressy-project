@@ -10,29 +10,33 @@ import WishList from "./pages/wishlist/wishlist";
 import PrivacyPolicy from "./pages/privacypolicy/privacypolicy";
 import Sidebar from "./components/sidebar";
 import Header from "./components/header";
-
+import PrimaryLayout from "./layouts/primary-layout";
 
 function App() {
   const [currentProduct, setCurrentProduct] = useState("");
   return (
     <>
-      <div class="layout">
+      <Routes>
+        <Route  path="/" element={<PrimaryLayout />}>
+          <Route path="/" element={<Home prod={currentProduct} currentProd={setCurrentProduct} />} />
+          <Route path="product" element={<ProductPage prod={currentProduct} currentProd={setCurrentProduct} />} />
+          <Route path="/wishlist" element={<WishList />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Route>
+
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+      {/* <div class="layout">
         <Sidebar></Sidebar>
         <div class="body-container">
           <Header></Header>
           <div class="body-content">
             this is body
-            <Routes>
-              <Route path="/" element={<Home prod={currentProduct} currentProd={setCurrentProduct} />} />
-              <Route path="product" element={<ProductPage prod={currentProduct} currentProd={setCurrentProduct} />} />
-              <Route path="/signin" element={<SignIn />} />
-              <Route path="/signup" element={<SignUp />} />
-              <Route path="/wishlist" element={<WishList />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            </Routes>
+          
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
