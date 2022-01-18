@@ -1,37 +1,74 @@
-html, body{
+html,
+body {
   height: 100%;
 }
+@import "assets/styles/icons";
+@import "assets/styles/fonts";
+@import "assets/styles/ui-elements/ui-element.scss";
+@import "assets/styles/utilities";
+// @import 'assets/styles/app-widgets';
+// @import '';
+// @import '';
 
-.btn-theme-blue{
+.btn-theme-blue {
   background: #3399ea;
   border-color: #3399ea;
 }
 
-.filter-dd{
-    .dropdown-toggle {
-      &::after {
-        display: none;
-      }
-    }
-  
-    .dropdown-menu {
-      width: 450px;
-      border: none !important;
-      box-shadow: 0 0 20px #ddd;
-      padding: 20px 20px !important;
-      @media only screen and (max-width: 600px) {
-        width: 100%;
-        left: 0;
-        right: 0;
-      }
+.filter-dd {
+  .dropdown-toggle {
+    &::after {
+      display: none;
     }
   }
 
-  .auth-pages-img{
-    width: 60%;
-    margin: 0 auto;
-    img{
+  .dropdown-menu {
+    width: 450px;
+    border: none !important;
+    box-shadow: 0 0 20px #ddd;
+    padding: 20px 20px !important;
+    @media only screen and (max-width: 600px) {
       width: 100%;
+      left: 0;
+      right: 0;
     }
   }
+}
 
+.auth-pages-img {
+  width: 60%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
+
+.layout {
+  height: 100%;
+  .sidebar {
+    width: 260px;
+    height: 100%;
+    border-right: 1px solid #dfebf7;
+    position: fixed;
+  }
+  .body-container {
+    margin-left: 260px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .header{
+      background: #fff;
+      height: 4.45rem;
+      padding: 0 2rem;
+      border-bottom: 1px solid #DFEBF7;
+    }
+    .body-content {
+      height: calc(100% - 4.45rem);
+      background: #f7fafc;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      overflow-y: overlay;
+    }
+  }
+}
